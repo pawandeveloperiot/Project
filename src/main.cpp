@@ -7,6 +7,7 @@ IPAddress ip(192, 168, 0, 126);
 const char server[] = "192.168.0.111"; // Replace with your server's IP address
 
 void setup() {
+    
     Serial.begin(9600);
     Serial.println("Initializing DHT sensor...");
     dhtSetup();
@@ -17,6 +18,7 @@ void setup() {
 
 void loop() {
     Serial.println("Reading DHT sensor data...");
+    Serial.println("Reading DHT sensor data now...");
     float humidity = readHumidity();
     float temperature = readTemperature();
     
