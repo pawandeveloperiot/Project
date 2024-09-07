@@ -19,6 +19,7 @@ void setup() {
 void loop() {
     Serial.println("Reading DHT sensor data...");
     Serial.println("Reading DHT sensor data now...");
+    Serial.println("Reading DHT...");
     float humidity = readHumidity();
     float temperature = readTemperature();
     
